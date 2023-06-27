@@ -1,0 +1,302 @@
+
+/* WebFont added to site, file located in assests folder*/
+@font-face {
+    font-family: 'Great Victorian Standard';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Great Victorian Standard'), url('../Assest/great-victorian-cufonfonts-webfont/GreatVictorian-Standard.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Great Victorian Swashed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Great Victorian Swashed'), url('../Assest/great-victorian-cufonfonts-webfont/GreatVictorian-Swashed.wofff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Great Victorian Swashed SC';
+    font-style: normal;
+     font-weight: normal;
+     src: local('Great Victorian Swashed SC'), url('../Assest/great-victorian-cufonfonts-webfont/GreatVictorian-SwashedSC.woff') format('woff');
+}
+
+*{
+    box-sizing: border-box; 
+    margin: 0;
+    padding:0;
+}
+
+body{
+    padding: 0 30px 0 30px;
+    background-color: rgb(2, 17, 33);
+    color: #bd863b;
+    font-family: 'Great Victorian Standard','Great Victorian Swashed',Verdana, Geneva, Tahoma, sans-serif;
+}
+/* First section, containing navagation bar and name item */
+.head-container{
+    width: 100%;
+    height: 90px;
+    background-color:#647d94;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Meaurments of the name item box */
+.head-item{
+    height: 50px;
+    margin: 0px;
+}
+/* details for the items within the head-item box*/
+div h1{
+    padding: 10px 30px 5px 30px;
+    background-color:#bd863b;
+    color: #021121;
+    font-size: 40px;
+    
+}
+div h1:hover {
+    filter: brightness(140%);
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+    
+}
+
+/* Navagation bar specifications */
+nav{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    padding: 15px 50px 10px 10px; 
+}
+
+nav div{
+    border-bottom: 2px solid #bd863b;
+}
+
+nav div a{
+    text-decoration: none;
+    color: #bd863b;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+/* second section */
+#hero {
+    height: 300px;
+    width: 100%;
+    background-image: url("../images/art deco.jpeg");
+    background-size: contain;
+    background-position: center;
+}
+
+/* text within hero container */
+.hero-section{/*  T - R -B - L */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: end;
+    padding: 0 50px 20px 0;
+    text-decoration: underline;
+}
+
+div span:hover {
+    filter: brightness(140%);
+    cursor: pointer;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+span[data-secret]:hover::after {
+    content:attr(data-secret); 
+}
+
+/* third section */
+article{
+    width: 100%;
+    height: 325px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* About me section*/
+.subtitle{
+    height: 90%;
+    width: 30.6%;
+    border-right: 3px solid #065248;
+    padding: 0px 20px 0 174px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+    font-size: 40px;
+    text-decoration: underline;
+    font: 'Great Victorian Swashed';
+}
+
+section span{
+    font-size: 50px;
+    padding: 8px 30px 8px 30px;
+    background-color: #bd863b;
+    color: #021121;
+    
+}
+
+#article-description{
+    height: 100%;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 43px;
+}
+
+
+.parent-box{
+    display:flex;
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+}
+
+.item-subtitile{
+    width: 30.1%;
+    height: 600px;
+    border-right: 3px solid #065248;
+    padding: 0px 20px 0 153px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+    font-size: 40px;
+    text-decoration: underline;
+    font: 'Great Victorian Swashed';
+}
+
+/* 4th section - grid */
+.item-gridContainer{ /*  T - R -B - L */
+    width: 70%;
+    padding: 10px 15px 10px 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    gap: 10px;
+
+}
+
+.item-grid{
+    border: 3px solid  #bd863b;
+    background-color: #014156;
+    font: 20px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: end;
+    height: 95%;
+}
+
+ul li{
+    background-color: #bd863b;
+    padding: 5px 10px 5px 10px;
+    color: #021121;
+}
+
+/* Grid items with image backgrounds */
+.item-grid:nth-last-of-type(5){
+    grid-column: 1 / 3;
+   
+    background-image: url("../images/surf.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.item-grid:nth-last-of-type(4){
+    background-image: url("../images/lightbulb.webp");
+    background-size: cover;
+    background-position: center;
+    
+}
+.item-grid:nth-last-of-type(3){
+    background-image: url("../images/VintageNumbers.avif");
+    background-size: cover;
+    background-position: center;
+}
+.item-grid:nth-last-of-type(2){
+    background-image: url("../images/puzzle.webp");
+    background-size: cover;
+    background-position: center;
+}
+.item-grid:nth-last-of-type(1){
+    background-image: url("../images/buddy.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.item-grid:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}
+
+/*footer section*/
+.footer-container{
+    height: 150px;
+    width: 100%;;
+    display: flex;
+}
+
+
+.footer-subtitle{
+    width: 30.6%;
+    height: 90%;
+    border-right: 3px solid #065248;
+    padding: 0px 20px 0 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+    font-size: 40px;
+    text-decoration: underline;
+    font: 'Great Victorian Swashed';
+}
+
+.item-footerLink{ /*  T - R -B - L */
+    width: 70%;
+    padding: 0px 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-itemFooter{
+    padding: 0 10px 0 10px;
+    border-bottom: 3px solid #bd863b;
+
+}
+
+/* footer links */
+a{
+    text-decoration: underline;
+    color:#bd863b;
+    font-size: 30px;
+}
+
+/* classes allow test to shirnk as screen size decreases */
+.text-size{
+    font-size: 2vw;
+}
+
+.size-subtitle{
+    font-size: 5vw;
+}
+
+p:hover {
+    filter: brightness(140%);
+}
+
+h2:hover {
+    filter: brightness(140%);
+}
+a:hover {
+    filter: brightness(140%);
+}
